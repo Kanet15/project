@@ -1,0 +1,137 @@
+/* styles1.css */
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Bar */
+#topbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#topbar .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header */
+#header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header img {
+    height: 50px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a.active {
+    color: #007bff;
+}
+
+.navbar ul li.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li.dropdown:hover ul {
+    display: block;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Departments Section */
+.departments-info .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.departments-info h3 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.departments-info h3 a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+#about h5 {
+    font-size: 16px;
+    color: #555;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+#about ul li i {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}

@@ -20,283 +20,686 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- ไฟล์หลักของเทมเพลต -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style1.css" rel="stylesheet">
 
-
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .card-link {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .card-link:hover {
+      text-decoration: underline;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card-container {
+      width: calc(33.333% - 40px);
+      margin: 10px;
+    }
+    @media (max-width: 768px) {
+      .card-container {
+        width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 576px) {
+      .card-container {
+        width: 100%;
+      }
+    }
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+    .search-container input {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .search-container button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .search-container button:hover {
+      background-color: #0056b3;
+    }
+    
+  </style>
 </head>
-<!-- ======= Top Bar ======= -->
-<section id="topbar" class="fixed-top d-flex align-items-center">
-  <div class="container d-flex justify-content-center justify-content-md-between">
-    <div class="contact-info d-flex align-items-center">
-      <i class="bi bi-envelope d-flex align-items-center"><a href="https://www.cpss.ac.th/home//">contact : cpss.ac.th </a></i>
-      
-    </div>
-    
-</section>
+
 <body>
-
-  
-
-    <!-- ======= Header ======= -->
-    
-    <header id="header" class="fixed-top d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-        
-        
-                  
-                  
-        
-          <a href="index.html"><span><h1><img src="https://imgur.com/gWejGvx.png" alt="โลโก้ของเว็บไซต์ของฉัน"></h1></span>
-          
-          
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html"><span><h1><img src="https://imgur.com/gWejGvx.png" alt="โลโก้ของเว็บไซต์ของฉัน"></h1></span></a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html"></a></li>
-          <li class="dropdown"><a href="index.html"><span>หน้าแรก</span> <i class="bi bi-chevron-down"></i></a>
-          
-          </li>
-          <li class="dropdown"><a href="pakat.html"><span>ประกาศ</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-            </ul>
-            <li class="dropdown"><a href="list.html"><span>รายชื่อชุมนุม</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-          
-              
-                
-                
-             
-                
-                  
-                </ul>
-              
-                
-        <i class="bi bi-list mobile-nav-toggle"></i>
+          <li><a class="nav-link scrollto active" href="index.html">หน้าแรก</a></li>
+          <li class="dropdown"><a href="pakat.html"><span>ประกาศ</span></a></li>
+          <li class="dropdown"><a href="list.html"><span>รายชื่อชุมนุม</span></a></li>
+        </ul>
       </nav><!-- .navbar -->
-
     </div>
+    
   </header><!-- End Header -->
 
-  <!-- ไว้ใส่ข้อมูล -->
-  <br>
-  <br>
-</header>
-<main>
-    <section class="departments d-flex align-items-center">
-        <div class="container">
-            <div class="d-flex flex-column justify-content-center">
-                <br>
-                
-                <h1>รายชื่อชุมนุมโรงเรียนชุมแพศึกษา</h1>
-               
-                <br>
-            </div>
-    <div class="departments-info">
-        <div class="card">
-            <div class="card-body">
-                <h3>  <a href="1.html">ภาพยนต์สั้น</a></h3>
-                <h3>  <a href="2.html">ต้นกล้าการออม</a></h3>
-                <h3>  <a href="3.html">Series of history (part 1)</a></h3>
-                <h3>  <a href="4.html">Series of history (part 2)</a></h3>
-                <h3>  <a href="5.html">กฎหมายใกล้ตัว</a></h3>
-                <h3>  <a href="6.html">บทเพลงสะท้อนสังคม</a></h3>
-                <h3>  <a href="7.html">รอบรู้รอบโลก</a></h3>
-                <h3>  <a href="8.html">4/12 IEP full of fun 2</a></h3>
-                <h3>  <a href="9.html">Social around the world</a></h3>
-                <h3>  <a href="10.html">ทัวร์ทั่วไทย</a></h3>
-
-                <h3>  <a href="11.html">การวางแผนการการเงินส่วนบุคคล</a></h3>
-                <h3>  <a href="12.html">เยาวชนไทยทําดี</a></h3>
-                <h3>  <a href="13.html">อายุน้อยร้อยล้าน</a></h3>
-                <h3>  <a href="14.html">ท่องโลกสังคม</a></h3>
-                <h3>  <a href="15.html">วอลเลย์บอล</a></h3>
-                <h3>  <a href="16.html">ประดิษฐ์ดอกไม้ใบตอง</a></h3>
-                <h3>  <a href="17.html">ติวเตอร์เพื่อนช่วยเพื่อน</a></h3>
-                <h3>  <a href="18.html">จัดสวนเพื่อน,สวนแก้ว</a></h3>
-                <h3>  <a href="19.html">อาชีพในฝันของขั้น</a></h3>
-                <h3>  <a href="20.html">Enigy IT</a></h3>
-                
-                <h3>  <a href="21.html">เหรียญโปรยทาน</a></h3>
-                <h3>  <a href="22.html">นักประดิษฐ์น้อย</a></h3>
-                <h3>  <a href="23.html">ต่อคำศัพท์ภาษาไทย</a></h3>
-                <h3>  <a href="24.html">อยู่อย่างไทย</a></h3>
-                <h3>  <a href="25.html">อ่านทำนอง คล้องจองคำประพันธ์</a></h3>
-                <h3>  <a href="26.html">ชวนอ่านสำราญใจ</a></h3>
-                <h3>  <a href="27.html">ภาษาไทย ภาษาถิ่น</a></h3>
-                <h3>  <a href="28.html">ชวนพูดอย่างสร้างสรรค์ ประชาสัมพันธ์เสียงตามสาย</a></h3>
-                <h3>  <a href="29.html">หรรษาภาษาไทย</a></h3>
-                <h3>  <a href="30.html">วรรณกรรม ร่วมสมัย</a></h3>
-                
-                <h3>  <a href="31.html">รักษ์ภาษาไทย</a></h3>
-                <h3>  <a href="32.html">ศิลปะสร้างสรรค์</a></h3>
-                <h3>  <a href="33.html">สีน้ำ</a></h3>
-                <h3>  <a href="34.html">ดนตรีไทย</a></h3>
-                <h3>  <a href="35.html">วงโยธวาทิต</a></h3>
-                <h3>  <a href="36.html">นาฏศิลป์ไทย</a></h3>
-                <h3>  <a href="37.html">Paint</a></h3>
-                <h3>  <a href="38.html">Digital Art</a></h3>
-                <h3>  <a href="39.html">ดนตรีพื้นเมือง</a></h3>
-                <h3>  <a href="40.html">นาฎศิลป์ไทย</a></h3>
-                
-                <h3>  <a href="41.html">Paint</a></h3>
-                <h3>  <a href="42.html">Digital Art</a></h3>
-                <h3>  <a href="43.html">ดนตรีพื้นเมือง</a></h3>
-                <h3>  <a href="44.html">รักเลข รักษ์โลก</a></h3>
-                <h3>  <a href="45.html">คณิตคิดสนุก</a></h3>
-                <h3>  <a href="46.html">คิดเลขเร็ว ม.ต้น</a></h3>
-                <h3>  <a href="47.html">เกม 24</a></h3>
-                <h3>  <a href="48.html">บอร์ดเกมคณิตศาสตร์ ม.ปลาย</a></h3>
-                <h3>  <a href="49.html">วอลเลย์บอลชาย</a></h3>
-                <h3>  <a href="50.html">เวทคณิต ม.ต้น</a></h3>
-                
-                <h3>  <a href="51.html">หมากรุกไทย</a></h3>
-                <h3>  <a href="52.html">ซูโดกุ พารวย</a></h3>
-                <h3>  <a href="53.html">Green Recycle</a></h3>
-                <h3>  <a href="54.html">อย.น้อย</a></h3>
-                <h3>  <a href="55.html">นักธุรกิจ</a></h3>
-                <h3>  <a href="56.html">TikTok Creator</a></h3>
-                <h3>  <a href="57.html">A-Math ม.ต้น</a></h3>
-                <h3>  <a href="58.html">A-Math ม.ปลาย</a></h3>
-                <h3>  <a href="59.html">K-pop Club</a></h3>
-                <h3>  <a href="60.html">Tutor Math ม.ปลาย</a></h3>
-                
-                <h3>  <a href="61.html">คณิตคิดสนุก ม.ปลาย</a></h3>
-                <h3>  <a href="62.html">เซปักตะกร้อ</a></h3>
-                <h3>  <a href="63.html">เปตอง ( ม.ปลาย )</a></h3>
-                <h3>  <a href="64.html">เปตอง ( ม.ต้น )</a></h3>
-                <h3>  <a href="65.html">จานร่อน</a></h3>
-                <h3>  <a href="66.html">นศท.ปี3</a></h3>
-                <h3>  <a href="67.html">นศท.ปี2</a></h3>
-                <h3>  <a href="68.html">ฟุตบอล</a></h3>
-                <h3>  <a href="69.html">A-MATH</a></h3>
-                <h3>  <a href="70.html">Pure - Math</a></h3>
-                
-                <h3>  <a href="71.html">ซูดูกุ</a></h3>
-                <h3>  <a href="72.html">Crossword ม.ต้น</a></h3>
-                <h3>  <a href="73.html">Crossword ม.ปลาย</a></h3>
-                <h3>  <a href="74.html">Game around the world</a></h3>
-                <h3>  <a href="75.html">Movie มูฟใจ</a></h3>
-                <h3>  <a href="76.html">English for fun</a></h3>
-                <h3>  <a href="77.html">English 1/12 MEP</a></h3>
-                <h3>  <a href="78.html">ภาษาจีนหรรษา</a></h3>
-                <h3>  <a href="79.html">English and French</a></h3>
-                <h3>  <a href="80.html">บอร์ดเกมส์ภาษาญี่ปุ่น</a></h3>
-                
-                <h3>  <a href="81.html">English around you</a></h3>
-                <h3>  <a href="82.html">English 2/12 MEP</a></h3>
-                <h3>  <a href="83.html">English for Meme</a></h3>
-                <h3>  <a href="84.html">IQ wird up</a></h3>
-                <h3>  <a href="85.html">English Around the world</a></h3>
-                <h3>  <a href="86.html">English for you</a></h3>
-                <h3>  <a href="87.html">English 3/12 MEP</a></h3>
-                <h3>  <a href="88.html">Theking' journey(ตามรอยพ่อ)</a></h3>
-                <h3>  <a href="89.html">4/12IEP Full of fun2</a></h3>
-                <h3>  <a href="90.html">ปาจิงโกะ</a></h3>
-                
-                <h3>  <a href="91.html">Magic English</a></h3>
-                <h3>  <a href="92.html">K-POP Club ม.ต้น 20 ม.ปลาย 20</a></h3>
-                <h3>  <a href="93.html">Tutor Math ม.ปลาย</a></h3>
-                <h3>  <a href="94.html">คณิต คิดสนุก ม.ปลาย</a></h3>
-                <h3>  <a href="95.html">ผูกเสียวกับข้อสอบ TEDET Science M1</a></h3>
-                <h3>  <a href="96.html">ท่องโลกวิทยาศาสตร์</a></h3>
-                <h3>  <a href="97.html">โสตทัศนศึกษา</a></h3>
-                <h3>  <a href="98.html">Amazing Al</a></h3>
-                <h3>  <a href="99.html">To be NO.1</a></h3>
-                <h3>  <a href="100.html">Photo of memory</a></h3>
-                
-                <h3>  <a href="111.html">วิทยา คิดสนุก</a></h3>
-                <h3>  <a href="112.html">ทบทวนข้อสอบ สอวน เคมี</a></h3>
-                <h3>  <a href="113.html">การทำแฟ้มสะสมงาน</a></h3>
-                <h3>  <a href="114.html">Enjoy IT</a></h3>
-                <h3>  <a href="115.html">ชีวะน่ารู้</a></h3>
-                <h3>  <a href="116.html">สัตวศาสตร์</a></h3>
-                <h3>  <a href="117.html">เคมีตึงๆ</a></h3>
-                <h3>  <a href="118.html">อยู่อย่างไทย</a></h3>
-                <h3>  <a href="119.html">คอมพิวเตอร์เบื้องต้น</a></h3>
-                <h3>  <a href="120.html">ยุวบรรณารักษ์</a></h3>
-                
-                <h3>  <a href="121.html">กระดาษพาเพลิน</a></h3>
-                <h3>  <a href="122.html">วิทยาศาสตร์น่ารู้</a></h3>
-                <h3>  <a href="123.html">เทคโนโลยีน่ารู้</a></h3>
-                <h3>  <a href="124.html">วิทย์น่ารู้</a></h3>
-                <h3>  <a href="125.html">นักเรียนเพื่อนที่ปรึกษา</a></h3>
-                <h3>  <a href="126.html">หมากเก็บ</a></h3>
-                <h3>  <a href="127.html">พืชหรรษา</a></h3>
-                <h3>  <a href="128.html">ของเล่นเชิงวิทยาศาสตร์</a></h3>
-                <h3>  <a href="129.html">ภาษาพาเพลิน</a></h3>
-                <h3>  <a href="130.html">เฮฮาภาษาไทย</a></h3>
-                
-                <h3>  <a href="131.html">กรีฑา</a></h3>
-                <h3>  <a href="132.html">หมากรุกไทย</a></h3>
-                
-                
-                
-                
-               
-                
-
-                <div>
-                 
-                   
-                    
-                    
-                </div>
-            </div>
-        </div>
-     
-
-
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
-
-     
+    
+    <section class="departments d-flex align-items-center">
+    
+      <div class="container">
+        <h1>รายชื่อชุมนุมโรงเรียนชุมแพศึกษา</h1>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="ค้นหารายชื่อชุมนุม...">
+          <button type="button" onclick="searchFunction()">ค้นหา</button>
+        </div>
+        <div class="cards-container">
+          <!-- Card Container -->
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="1.html" class="card-link">ภาพยนต์สั้น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="2.html" class="card-link">ต้นกล้าการออม</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="3.html" class="card-link">Series of history (part 1)</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="4.html" class="card-link">Series of history (part 2)</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="5.html" class="card-link">กฎหมายใกล้ตัว</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="6.html" class="card-link">บทเพลงสะท้อนสังคม</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="7.html" class="card-link">รอบรู้รอบโลก</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="8.html" class="card-link">4/12 IEP full of fun 2</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="9.html" class="card-link">Social around the world</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="10.html" class="card-link">ทัวร์ทั่วไทย</a></h3>
+            </div>
+          </div>
+          <!-- Add more cards here -->
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="11.html" class="card-link">การวางแผนการการเงินส่วนบุคคล</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="12.html" class="card-link">เยาวชนไทยทําดี</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="13.html" class="card-link">อายุน้อยร้อยล้าน</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="14.html" class="card-link">ท่องโลกสังคม</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="15.html" class="card-link">วอลเลย์บอล</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="16.html" class="card-link">ประดิษฐ์ดอกไม้ใบตอง</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="17.html" class="card-link">ติวเตอร์เพื่อนช่วยเพื่อน</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="18.html" class="card-link">จัดสวนเพื่อน,สวนแก้ว</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="19.html" class="card-link">อาชีพในฝันของขั้น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="20.html" class="card-link">Enigy IT</a></h3>
+            </div>
+          </div>
+          <!-- Add more cards here -->
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="21.html" class="card-link">เหรียญโปรยทาน</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="22.html" class="card-link">นักประดิษฐ์น้อย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="23.html" class="card-link">ต่อคำศัพท์ภาษาไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="24.html" class="card-link">อยู่อย่างไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="25.html" class="card-link">อ่านทำนอง คล้องจองคำประพันธ์</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="26.html" class="card-link">ชวนอ่านสำราญใจ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="27.html" class="card-link">ภาษาไทย ภาษาถิ่น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="28.html" class="card-link">ชวนพูดอย่างสร้างสรรค์ ประชาสัมพันธ์เสียงตามสาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="29.html" class="card-link">หรรษาภาษาไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="30.html" class="card-link">วรรณกรรม ร่วมสมัย</a></h3>
+            </div>
+          </div>
+          <!-- Add more cards here -->
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="31.html" class="card-link">รักษ์ภาษาไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="32.html" class="card-link">ศิลปะสร้างสรรค์</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="33.html" class="card-link">สีน้ำ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="34.html" class="card-link">ดนตรีไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="35.html" class="card-link">วงโยธวาทิต</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="36.html" class="card-link">นาฏศิลป์ไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="37.html" class="card-link">Paint</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="38.html" class="card-link">Digital Art</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="39.html" class="card-link">ดนตรีพื้นเมือง</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="40.html" class="card-link">นาฎศิลป์ไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="41.html" class="card-link">Paint</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="42.html" class="card-link">Digital Art</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="43.html" class="card-link">ดนตรีพื้นเมือง</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="44.html" class="card-link">รักเลข รักษ์โลก</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="45.html" class="card-link">คณิตคิดสนุก</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="46.html" class="card-link">คิดเลขเร็ว ม.ต้น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="47.html" class="card-link">เกม 24</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="48.html" class="card-link">บอร์ดเกมคณิตศาสตร์ ม.ปลาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="49.html" class="card-link">วอลเลย์บอลชาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="50.html" class="card-link">เวทคณิต ม.ต้น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="51.html" class="card-link">หมากรุกไทย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="52.html" class="card-link">ซูโดกุ พารวย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="53.html" class="card-link">Green Recycle</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="54.html" class="card-link">อย.น้อย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="55.html" class="card-link">นักธุรกิจ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="56.html" class="card-link">TikTok Creator</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="57.html" class="card-link">A-Math ม.ต้น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="58.html" class="card-link">A-Math ม.ปลาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="59.html" class="card-link">K-pop Club</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="60.html" class="card-link">Tutor Math ม.ปลาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="61.html" class="card-link">คณิตคิดสนุก ม.ปลาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="62.html" class="card-link">เซปักตะกร้อ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="63.html" class="card-link">เปตอง ( ม.ปลาย )</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="64.html" class="card-link">เปตอง ( ม.ต้น )</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="65.html" class="card-link">จานร่อน</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="66.html" class="card-link">นศท.ปี3</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="67.html" class="card-link">นศท.ปี2</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="68.html" class="card-link">ฟุตบอล</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="69.html" class="card-link">A-MATH</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="70.html" class="card-link">Pure - Math</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="71.html" class="card-link">ซูดูกุ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="72.html" class="card-link">Crossword ม.ต้น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="73.html" class="card-link">Crossword ม.ปลาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="74.html" class="card-link">Game around the world</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="75.html" class="card-link">Movie มูฟใจ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="76.html" class="card-link">English for fun</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="77.html" class="card-link">English 1/12 MEP</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="78.html" class="card-link">ภาษาจีนหรรษา</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="79.html" class="card-link">English and French</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="80.html" class="card-link">บอร์ดเกมส์ภาษาญี่ปุ่น</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="81.html" class="card-link">English around you</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="82.html" class="card-link">English 2/12 MEP</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="83.html" class="card-link">English for Meme</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="84.html" class="card-link">IQ wird up</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="85.html" class="card-link">English Around the world</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="86.html" class="card-link">English for you</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="87.html" class="card-link">English 3/12 MEP</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="88.html" class="card-link">Theking' journey(ตามรอยพ่อ)</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="89.html" class="card-link">4/12IEP Full of fun2</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="90.html" class="card-link">ปาจิงโกะ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="91.html" class="card-link">Magic English</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="92.html" class="card-link">K-POP Club ม.ต้น 20 ม.ปลาย 20</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="93.html" class="card-link">Tutor Math ม.ปลาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="94.html" class="card-link">คณิต คิดสนุก ม.ปลาย</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="95.html" class="card-link">ผูกเสียวกับข้อสอบ TEDET Science M1</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="96.html" class="card-link">ผูกเสียวกับข้อสอบ TEDET Science M2</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="97.html" class="card-link">Math Fun</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="98.html" class="card-link">ภาษาต่างประเทศ</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="99.html" class="card-link">วิทยาศาสตร์</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="100.html" class="card-link">สัมผัสโลก</a></h3>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title"><a href="101.html" class="card-link">หลากหลายวิชา</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main id="main">
+    
      <!-- ======= About Section ======= -->
      <section id="about" class="about">
-      <div class="container">
-
-        <div class="row content">
-          <div class="col-lg-6">
-            <h1><b>โรงเรียนชุมแพศึกษา</b></h1>
-            <br>
-            <h5> เป็นโรงเรียนมัธยมประจำอำเภอชุมแพ สังกัดกรมสามัญศึกษา กระทรวงศึกษาธิการ 
-              เป็นหน่วยงานของรัฐบาลซึ่งจัดการศึกษาในรูปแบบของโรงเรียนระดับมัธยมศึกษา ปัจจุบันได้จัดการเรียนการสอนในสายสามัญ 
-              รูปแบบสหศึกษา ตั้งแต่ชั้นมัธยมศึกษาปีที่ 1 - 6 มีจำนักเรียนมากกว่า 3,324 คน ครูและบุคลากรทางการศึกษาอีกกว่า 232 คน จัดอยู่ในประเภทโรงเรียนมัธยมศึกษาขนาดใหญ่</h5>
-            
-          
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-                    <h2>เมนูลัดไปยังหน้าต่างๆ
-
-                    </h2>
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i><a style="text-decoration:none"  href="index.html" target="_blank" >  หน้าแรก</a></li>
-              <li><i class="ri-check-double-line"></i> <a style="text-decoration:none"  href="pakat.html" target="_blank" > ประกาศ</a></li>
-              <li><i class="ri-check-double-line"></i> <a style="text-decoration:none"  href="list.html" target="_blank" >  รายชื่อชุมนุม</a></li>
+        <div class="container">
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <h1><b>โรงเรียนชุมแพศึกษา</b></h1>
+              <br>
+              <h5> เป็นโรงเรียนมัธยมประจำอำเภอชุมแพ สังกัดกรมสามัญศึกษา กระทรวงศึกษาธิการ 
+                เป็นหน่วยงานของรัฐบาลซึ่งจัดการศึกษาในรูปแบบของโรงเรียนระดับมัธยมศึกษา ปัจจุบันได้จัดการเรียนการสอนในสายสามัญ 
+                รูปแบบสหศึกษา ตั้งแต่ชั้นมัธยมศึกษาปีที่ 1 - 6 มีจำนักเรียนมากกว่า 3,324 คน ครูและบุคลากรทางการศึกษาอีกกว่า 232 คน จัดอยู่ในประเภทโรงเรียนมัธยมศึกษาขนาดใหญ่</h5>
               
-              
-            </ul>
             
-            </p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                      <h2>เมนูลัดไปยังหน้าต่างๆ
+  
+                      </h2>
+              </p>
+              <ul>
+                <li><i class="ri-check-double-line"></i><a style="text-decoration:none"  href="index.html" target="_blank" >  หน้าแรก</a></li>
+                <li><i class="ri-check-double-line"></i> <a style="text-decoration:none"  href="pakat.html" target="_blank" > ประกาศ</a></li>
+                <li><i class="ri-check-double-line"></i> <a style="text-decoration:none"  href="list.html" target="_blank" >  รายชื่อชุมนุม</a></li>
+                
+                
+              </ul>
+              
+              </p>
+            </div>
           </div>
+  
         </div>
+      </section><!-- End About Section -->
+  
+  
+      
+  
+    <!-- Vendor JS Files -->
+  
+    <!-- Template Main JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+     <!-- JavaScript -->
+  <script>
+    function searchFunction() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card-container');
 
-      </div>
-    </section><!-- End About Section -->
-
-
-    
-
-  <!-- Vendor JS Files -->
-
-  <!-- Template Main JS File -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+      cards.forEach(card => {
+        const title = card.querySelector('.card-title').innerText.toLowerCase();
+        if (title.includes(input)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  </body>
 </html>

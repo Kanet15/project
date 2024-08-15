@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>สมัครชุมนุมโรงเรียนชุมแพศึกษา</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://cdn.discordapp.com/attachments/971671966627029012/1209086154172006440/favicon.png?ex=65e5a43a&is=65d32f3a&hm=e93f74329e2793885fc2ceebb627220fe9044c2c17aff7ba9caf93dc1107a0cb&.png" rel="icon">
+  <link href="https://cdn.discordapp.com/attachments/971671966627029012/1209086154172006440/favicon.png?ex=65e5a43a&is=65d32f3a&hm=e93f74329e2793885fc2ceebb627220fe9044c2c17aff7ba9caf93dc1107a0cb&.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.4.2/css/pro.min.css">
+
+  <!-- ส่วนบนของ css file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- ไฟล์หลักของเทมเพลต -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .dropdown-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .dropdown-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+    }
+
+    .dropdown-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ced4da;
+      border-top: none;
+      border-radius: 0.25rem;
+      background-color: #fff;
+      z-index: 1000;
+      display: none;
+    }
+
+    .dropdown-item {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    .no-results {
+      padding: 10px;
+      color: red;
+      text-align: center;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html"><span><h1><img src="https://imgur.com/gWejGvx.png" alt="โลโก้ของเว็บไซต์ของฉัน"></h1></span></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">หน้าแรก</a></li>
+          <li><a class="nav-link scrollto" href="pakat.html">ประกาศ</a></li>
+          <li><a class="nav-link scrollto" href="list.html">รายชื่อชุมนุม</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main>
+    <section class="container my-5">
+      <h2 class="mb-4">ฟอร์มสมัครชุมนุม</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="name">ชื่อ-นามสกุล</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="กรอกชื่อ-นามสกุล" required>
+        </div>
+        <div class="form-group">
+          <label for="class">ชั้น</label>
+          <input type="text" id="class" name="class" class="form-control" placeholder="กรอกชั้น" required>
+        </div>
+        <div class="form-group">
+          <label for="number">เลขที่</label>
+          <input type="text" id="number" name="number" class="form-control" placeholder="กรอกเลขที่" required>
+        </div>
+        <div class="form-group">
+          <label for="student_id">เลขประจำตัวนักเรียน</label>
+          <input type="text" id="student_id" name="student_id" class="form-control" placeholder="กรอกเลขประจำตัวนักเรียน" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">เบอร์โทรศัพท์</label>
+          <input type="tel" id="phone" name="phone" class="form-control" placeholder="กรอกเบอร์โทรศัพท์" required>
+        </div>
+        <div class="form-group">
+          <label for="club">เลือกชุมนุม</label>
+          <div class="dropdown-container">
+            <input type="text" id="searchClub" class="dropdown-input" placeholder="ค้นหาชุมนุม">
+            <div id="dropdownList" class="dropdown-list">
+              <!-- รายการชุมนุมทั้งหมดที่มี -->
+              <div class="dropdown-item" data-value="ภาพยนต์สั้น">ภาพยนต์สั้น</div>
+              <div class="dropdown-item" data-value="ต้นกล้าการออม">ต้นกล้าการออม</div>
+              <div class="dropdown-item" data-value="Series of history (part 1)">Series of history (part 1)</div>
+              <div class="dropdown-item" data-value="Series of history (part 2)">Series of history (part 2)</div>
+              <div class="dropdown-item" data-value="กฎหมายใกล้ตัว">กฎหมายใกล้ตัว</div>
+              <div class="dropdown-item" data-value="บทเพลงสะท้อนสังคม">บทเพลงสะท้อนสังคม</div>
+              <div class="dropdown-item" data-value="รอบรู้รอบโลก">รอบรู้รอบโลก</div>
+              <div class="dropdown-item" data-value="4/12 IEP full of fun 2">4/12 IEP full of fun 2</div>
+              <div class="dropdown-item" data-value="Social around the world">Social around the world</div>
+              <div class="dropdown-item" data-value="ทัวร์ทั่วไทย">ทัวร์ทั่วไทย</div>
+              <div class="dropdown-item" data-value="การวางแผนการการเงินส่วนบุคคล">การวางแผนการการเงินส่วนบุคคล</div>
+              <div class="dropdown-item" data-value="เยาวชนไทยทําดี">เยาวชนไทยทําดี</div>
+              <div class="dropdown-item" data-value="อายุน้อยร้อยล้าน">อายุน้อยร้อยล้าน</div>
+              <div class="dropdown-item" data-value="ท่องโลกสังคม">ท่องโลกสังคม</div>
+              <div class="dropdown-item" data-value="วอลเลย์บอล">วอลเลย์บอล</div>
+              <div class="dropdown-item" data-value="ประดิษฐ์ดอกไม้ใบตอง">ประดิษฐ์ดอกไม้ใบตอง</div>
+              <div class="dropdown-item" data-value="ติวเตอร์เพื่อนช่วยเพื่อน">ติวเตอร์เพื่อนช่วยเพื่อน</div>
+              <div class="dropdown-item" data-value="จัดสวนเพื่อน,สวนแก้ว">จัดสวนเพื่อน,สวนแก้ว</div>
+              <div class="dropdown-item" data-value="อาชีพในฝันของขั้น">อาชีพในฝันของขั้น</div>
+              <div class="dropdown-item" data-value="Enigy IT">Enigy IT</div>
+              <div class="dropdown-item" data-value="เหรียญโปรยทาน">เหรียญโปรยทาน</div>
+              <div class="dropdown-item" data-value="นักประดิษฐ์น้อย">นักประดิษฐ์น้อย</div>
+              <div class="dropdown-item" data-value="ต่อคำศัพท์ภาษาไทย">ต่อคำศัพท์ภาษาไทย</div>
+              <div class="dropdown-item" data-value="อยู่อย่างไทย">อยู่อย่างไทย</div>
+              <div class="dropdown-item" data-value="สมาคมนักรบ">สมาคมนักรบ</div>
+              <div class="dropdown-item" data-value="ต่อต้านการคุกคาม">ต่อต้านการคุกคาม</div>
+              <div class="dropdown-item" data-value="บอร์ดเกมคณิตศาสตร์">บอร์ดเกมคณิตศาสตร์</div>
+              <div class="dropdown-item" data-value="เต้นรำเชียร์">เต้นรำเชียร์</div>
+              <div class="dropdown-item" data-value="โยธวาทิต">โยธวาทิต</div>
+              <div class="dropdown-item" data-value="นาฏศิลป์ไทย">นาฏศิลป์ไทย</div>
+              <div class="dropdown-item" data-value="Paint">Paint</div>
+              <div class="dropdown-item" data-value="Digital Art">Digital Art</div>
+              <div class="dropdown-item" data-value="ดนตรีพื้นเมือง">ดนตรีพื้นเมือง</div>
+              <div class="dropdown-item" data-value="รักเลข รักษ์โลก">รักเลข รักษ์โลก</div>
+              <div class="dropdown-item" data-value="คณิตคิดสนุก">คณิตคิดสนุก</div>
+              <div class="dropdown-item" data-value="คิดเลขเร็ว ม.ต้น">คิดเลขเร็ว ม.ต้น</div>
+              <div class="dropdown-item" data-value="เกม 24">เกม 24</div>
+              <div class="dropdown-item" data-value="บอร์ดเกมคณิตศาสตร์ ม.ปลาย">บอร์ดเกมคณิตศาสตร์ ม.ปลาย</div>
+              <div class="dropdown-item" data-value="วอลเลย์บอลชาย">วอลเลย์บอลชาย</div>
+              <div class="dropdown-item" data-value="เวทคณิต ม.ต้น">เวทคณิต ม.ต้น</div>
+              <div class="dropdown-item" data-value="หมากรุกไทย">หมากรุกไทย</div>
+              <div class="dropdown-item" data-value="ซูโดกุ พารวย">ซูโดกุ พารวย</div>
+              <div class="dropdown-item" data-value="Green Recycle">Green Recycle</div>
+              <div class="dropdown-item" data-value="อย.น้อย">อย.น้อย</div>
+              <div class="dropdown-item" data-value="นักธุรกิจ">นักธุรกิจ</div>
+              <div class="dropdown-item" data-value="TikTok Creator">TikTok Creator</div>
+              <div class="dropdown-item" data-value="A-Math ม.ต้น">A-Math ม.ต้น</div>
+              <div class="dropdown-item" data-value="A-Math ม.ปลาย">A-Math ม.ปลาย</div>
+              <div class="dropdown-item" data-value="K-pop Club">K-pop Club</div>
+              <div class="dropdown-item" data-value="Tutor Math">Tutor Math</div>
+              <div class="dropdown-item" data-value="Physics Club">Physics Club</div>
+              <div class="dropdown-item" data-value="English Conversation">English Conversation</div>
+              <div class="dropdown-item" data-value="Creative Writing">Creative Writing</div>
+              <div class="dropdown-item" data-value="Future Scientist">Future Scientist</div>
+              <div class="dropdown-item" data-value="Design Thinking">Design Thinking</div>
+              <div class="dropdown-item" data-value="E-Sports">E-Sports</div>
+              <div class="dropdown-item" data-value="Fitness">Fitness</div>
+              <div class="dropdown-item" data-value="Photography">Photography</div>
+              <div class="dropdown-item" data-value="Creative Coding">Creative Coding</div>
+            </div>
+            <div id="noResults" class="no-results">ไม่พบชุมนุมที่ตรงกับคำค้นหา</div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">สมัคร</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+  
+  <!-- Firebase JS SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+
+    // ข้อมูลการตั้งค่า Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyAMWNnEIxQE3FzNi1ZLAM6Me7NCCddxFkY",
+      authDomain: "club-firebase-1cecd.firebaseapp.com",
+      projectId: "club-firebase-1cecd",
+      storageBucket: "club-firebase-1cecd.appspot.com",
+      messagingSenderId: "427901129023",
+      appId: "1:427901129023:web:e6c98f15501f264330438a",
+      measurementId: "G-DQTM56YTDV"
+    };
+
+    // เริ่มต้น Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    document.getElementById('signupForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
+
+      const formData = {
+        name: document.getElementById('name').value,
+        class: document.getElementById('class').value,
+        number: document.getElementById('number').value,
+        student_id: document.getElementById('student_id').value,
+        phone: document.getElementById('phone').value
+      };
+
+      const selectedClub = document.querySelector('.dropdown-item.selected');
+      if (!selectedClub) {
+        alert("กรุณาเลือกชุมนุม");
+        return;
+      }
+
+      const clubValue = selectedClub.getAttribute('data-value');
+
+      try {
+        // บันทึกข้อมูลไปยัง Firestore ใน collection ตามชุมนุมที่เลือก
+        const docRef = await addDoc(collection(db, clubValue), formData);
+        console.log("Document written with ID: ", docRef.id);
+        alert("สมัครสมาชิกเรียบร้อย");
+        window.location.href = "index.html"; // ไปที่หน้าแรกหลังจากสมัคร
+      } catch (e) {
+        console.error("Error adding document: ", e);
+        alert("เกิดข้อผิดพลาดในการสมัครสมาชิก");
+      }
+    });
+
+    const dropdownList = document.getElementById('dropdownList');
+    const searchInput = document.getElementById('searchClub');
+    const noResults = document.getElementById('noResults');
+
+    searchInput.addEventListener('input', function () {
+      const searchTerm = this.value.toLowerCase();
+      const items = dropdownList.getElementsByClassName('dropdown-item');
+      let hasVisibleOption = false;
+
+      Array.from(items).forEach(item => {
+        const optionText = item.textContent.toLowerCase();
+        if (optionText.includes(searchTerm)) {
+          item.style.display = 'block';
+          hasVisibleOption = true;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      noResults.style.display = hasVisibleOption ? 'none' : 'block';
+      dropdownList.style.display = 'block';
+    });
+
+    dropdownList.addEventListener('click', function (e) {
+      if (e.target.classList.contains('dropdown-item')) {
+        searchInput.value = e.target.textContent;
+        document.querySelectorAll('.dropdown-item').forEach(item => item.classList.remove('selected'));
+        e.target.classList.add('selected');
+        dropdownList.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!dropdownList.contains(e.target) && e.target !== searchInput) {
+        dropdownList.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
